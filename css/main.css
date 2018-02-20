@@ -1,0 +1,28 @@
+body {
+    width: 960px;
+
+}
+
+.header-navigation {
+    width: 960px;
+    height: 512px;
+    color: white;
+    background-color: rebeccapurple;
+    background-image: url("../img/HeaderUpBackground.jpg");
+}
+
+.header-navigation--logo-left {
+    width: 240px;
+    height: 180px;
+    background-image: url("../img/header-up--logoleft.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.phone-icon {
+    fill: white;
+}
+
+.header-navigation--phone-number {
+    position: relative;
+}
