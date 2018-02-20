@@ -1,0 +1,4 @@
+- [ ] Remove unnecessary HTML tags
+- [ ] Create separate css files
+- [ ] Refactor some css classes according to BEM  
+- [ ] Use variables in css
