@@ -1,0 +1,43 @@
+body {
+    width: 960px;
+
+}
+
+.header-navigation {
+    width: 960px;
+    height: 512px;
+    color: white;
+    background-color: rebeccapurple;
+    background-image: url("../img/header-navigation__background.jpg");
+}
+
+.header-navigation__logo {
+    width: 240px;
+    height: 180px;
+    background-image: url("../img/header-navigation__logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-navigation__phone-number {
+    position: relative;
+    top: -140px;
+    left: 750px;
+}
+
+.phone-icon {
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+    fill: white;
+}
+
+.header-navigation__motto {
+    text-align: center;
+}
+
+.header-navigation__slogan {
+    text-align: center;
+}
