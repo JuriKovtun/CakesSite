@@ -14,19 +14,23 @@
     background-repeat: no-repeat;
 }
 
-.header-navigation__phone-number {
+.header-navigation__phone {
     position: relative;
     top: -140px;
     left: 750px;
 }
 
-.phone-icon {
+.header-navigation__phone-icon {
     height: 18px;
     width: 18px;
     margin-right: 5px;
     position: relative;
     top: 3px;
     fill: white;
+}
+
+.header-navigation__phone-number {
+
 }
 
 .header-navigation__motto {
