@@ -1,0 +1,5 @@
+- [ ] Remove unnecessary HTML tags
+- [ ] Create separate css files
+- [ ] Refactor some css classes according to BEM  
+- [ ] Use variables in css
+- [x] Fixed bug with SVG color, optimized SVG
