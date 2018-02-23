@@ -9,15 +9,16 @@
 .header-navigation__logo {
     width: 240px;
     height: 180px;
+    display: inline-block;
     background-image: url("../img/header-navigation__logo.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .header-navigation__phone {
-    position: relative;
-    top: -140px;
-    left: 750px;
+    float: right;
+    margin-top: 4%;
+    margin-right: 6%;
 }
 
 .header-navigation__phone-icon {
