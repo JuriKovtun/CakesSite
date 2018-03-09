@@ -1,3 +1,33 @@
 .products {
-    height:80px;
+
+
 }
+
+.products__checkboxes {
+    background-color: chartreuse;
+    display: inline-block;
+    width: 35%;
+    margin: 0;
+}
+
+.products__main {
+    background-color: crimson;
+    height: 100px;
+    width: 65%;
+    float: right;
+    margin: 0;
+
+}
+
+.products__checkbox {
+    position: relative;
+    top: 2.5px;
+
+}
+
+.products__checkbox_label {
+    display: inline-block;
+    margin-left: 10%;
+
+}
+
