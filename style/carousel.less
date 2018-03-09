@@ -4,7 +4,6 @@
   height: 80vh;
   width: inherit;
 
-
   &__image {
     width: 100%;
     height: inherit;
@@ -22,22 +21,27 @@
 
   &__button {
     cursor: pointer;
-    opacity: 0.5;
     position: absolute;
     top: 55%;
-    width: 65px;
+    width: 50px;
     color: transparent;
-    height: 23px;
+    height: 35px;
     border-radius: 8px;
     border: none;
     background: no-repeat center;
+    //
+    &:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
 
     &_prev {
+      margin-left: 4px;
       background-image: url("../img/carousel_pics/ic_keyboard_arrow_left_black_24px.svg");
 
     }
 
     &_next {
+      margin-right: 4px;
       right: 0;
       background-image: url("../img/carousel_pics/ic_keyboard_arrow_right_black_24px.svg");
 
