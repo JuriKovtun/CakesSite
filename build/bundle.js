@@ -883,7 +883,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "body {\n  max-width: 960px;\n  margin: auto;\n  font-family: 'Roboto', sans-serif;\n  background-color: #ecf0f1;\n  font-size: 0.8rem;\n}\n", ""]);
+exports.push([module.i, "body {\n  max-width: 960px;\n  margin: auto;\n  font-family: 'Roboto', sans-serif;\n  background-color: #ecf0f1;\n  font-size: 0.8rem;\n  box-shadow: 0 0 20px #ccc;\n  border: 0.5px solid #ccc;\n}\n", ""]);
 
 // exports
 
@@ -1088,7 +1088,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, ".products {\n  background-color: white;\n}\n.products__main {\n  background-color: crimson;\n  height: 100px;\n  width: 65%;\n  float: right;\n  margin: 0;\n}\n.products__checkboxes {\n  display: inline-block;\n  width: 35%;\n  margin: 0;\n}\n.products__checkboxes_wrapper {\n  margin: 20px 20px;\n  background-color: white;\n  box-shadow: 0 0 20px #ccc;\n  border: 0.5px solid #ccc;\n}\n.products__checkbox {\n  position: relative;\n  top: 2.5px;\n}\n.products__checkbox_label {\n  display: block;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, ".products {\n  background-color: white;\n}\n.products__main {\n  background-color: crimson;\n  height: 100px;\n  width: 65%;\n  float: right;\n  margin: 0;\n}\n.products__checkboxes {\n  display: inline-block;\n  width: 35%;\n  margin: 0;\n}\n.products__checkboxes_wrapper {\n  margin: 20px 20px;\n  background-color: white;\n  box-shadow: 0 0 8px #ccc;\n  border: 0.5px solid #ccc;\n}\n.products__checkbox {\n  position: relative;\n  top: 2.5px;\n}\n.products__checkbox_label {\n  display: block;\n  text-align: center;\n}\n", ""]);
 
 // exports
 
