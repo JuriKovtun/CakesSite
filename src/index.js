@@ -1,3 +1,10 @@
+import "../style/about.less"
+import "../style/carousel.less"
+import "../style/common.less"
+import "../style/footer.less"
+import "../style/header.less"
+import "../style/products.less"
+
 // TODO: refactor to separate file
 let buttonNext = document.querySelector(".carousel__button_next");
 let buttonPrev = document.querySelector(".carousel__button_prev");

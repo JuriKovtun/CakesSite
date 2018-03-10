@@ -1,0 +1,27 @@
+{
+  "name": "cakessite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuriKovtun/CakesSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuriKovtun/CakesSite/issues"
+  },
+  "homepage": "https://github.com/JuriKovtun/CakesSite#readme",
+  "dependencies": {
+    "css-loader": "^0.28.10",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1"
+  }
+}
