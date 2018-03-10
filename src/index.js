@@ -6,6 +6,11 @@ import "../style/header.less"
 import "../style/products.less"
 
 import {setupSlider} from "./setupSlider";
-
+import {setupCheckboxes} from "./setupCheckboxes";
+import ingredients from "../data/ingredients.js";
 
 setupSlider();
+
+const checkboxArea = document.querySelector(".products__checkboxes");
+
+setupCheckboxes(checkboxArea, ingredients);

@@ -568,6 +568,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__style_products_less__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__style_products_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__style_products_less__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__setupSlider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__setupCheckboxes__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__data_ingredients_js__ = __webpack_require__(23);
+
 
 
 
@@ -579,6 +582,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 Object(__WEBPACK_IMPORTED_MODULE_6__setupSlider__["a" /* setupSlider */])();
+
+const checkboxArea = document.querySelector(".products__checkboxes");
+
+Object(__WEBPACK_IMPORTED_MODULE_7__setupCheckboxes__["a" /* setupCheckboxes */])(checkboxArea, __WEBPACK_IMPORTED_MODULE_8__data_ingredients_js__["a" /* default */]);
 
 
 /***/ }),
@@ -1081,7 +1088,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, ".products__main {\n  background-color: crimson;\n  height: 100px;\n  width: 65%;\n  float: right;\n  margin: 0;\n}\n.products__checkboxes {\n  display: inline-block;\n  width: 35%;\n  margin: 0;\n}\n.products__checkboxes_wrapper {\n  margin: 20px 20px;\n  background-color: white;\n  box-shadow: 0 0 20px #ccc;\n  border: 0.5px solid #ccc;\n}\n.products__checkbox {\n  position: relative;\n  top: 2.5px;\n}\n.products__checkbox_label {\n  display: block;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, ".products {\n  background-color: white;\n}\n.products__main {\n  background-color: crimson;\n  height: 100px;\n  width: 65%;\n  float: right;\n  margin: 0;\n}\n.products__checkboxes {\n  display: inline-block;\n  width: 35%;\n  margin: 0;\n}\n.products__checkboxes_wrapper {\n  margin: 20px 20px;\n  background-color: white;\n  box-shadow: 0 0 20px #ccc;\n  border: 0.5px solid #ccc;\n}\n.products__checkbox {\n  position: relative;\n  top: 2.5px;\n}\n.products__checkbox_label {\n  display: block;\n  text-align: center;\n}\n", ""]);
 
 // exports
 
@@ -1161,6 +1168,40 @@ const setupSlider = () => {
 // };
 //
 // run();
+};
+
+
+
+/***/ }),
+/* 22 */,
+/* 23 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (["A", "B", "C"]);
+
+/***/ }),
+/* 24 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return setupCheckboxes; });
+const setupCheckboxes = (area, ingredients) => {
+    let container = document.createElement("div");
+    container.classList.add("products__checkboxes_wrapper");
+    ingredients.map((el) => {
+        let label = document.createElement("label");
+        label.innerHTML = el;
+        label.classList.add("products__checkbox_label");
+
+        let input = document.createElement("input");
+        input.classList.add("products__checkbox");
+        input.setAttribute("type", "checkbox");
+
+        label.appendChild(input);
+        container.appendChild(label);
+    });
+    area.appendChild(container);
 };
 
 
