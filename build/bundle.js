@@ -1081,7 +1081,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, ".products__checkboxes {\n  background-color: chartreuse;\n  display: inline-block;\n  width: 35%;\n  margin: 0;\n}\n.products__main {\n  background-color: crimson;\n  height: 100px;\n  width: 65%;\n  float: right;\n  margin: 0;\n}\n.products__checkbox {\n  position: relative;\n  top: 2.5px;\n}\n.products__checkbox_label {\n  display: inline-block;\n  margin-left: 10%;\n}\n", ""]);
+exports.push([module.i, ".products__main {\n  background-color: crimson;\n  height: 100px;\n  width: 65%;\n  float: right;\n  margin: 0;\n}\n.products__checkboxes {\n  display: inline-block;\n  width: 35%;\n  margin: 0;\n}\n.products__checkboxes_wrapper {\n  margin: 20px 20px;\n  background-color: white;\n  box-shadow: 0 0 20px #ccc;\n  border: 0.5px solid #ccc;\n}\n.products__checkbox {\n  position: relative;\n  top: 2.5px;\n}\n.products__checkbox_label {\n  display: block;\n  text-align: center;\n}\n", ""]);
 
 // exports
 

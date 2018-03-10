@@ -1,33 +1,38 @@
 .products {
 
-
-}
-
-.products__checkboxes {
-    background-color: chartreuse;
-    display: inline-block;
-    width: 35%;
-    margin: 0;
-}
-
-.products__main {
+  &__main {
     background-color: crimson;
     height: 100px;
     width: 65%;
     float: right;
     margin: 0;
 
-}
+  }
+  &__checkboxes {
+    //background-color: chartreuse;
+    display: inline-block;
+    width: 35%;
+    margin: 0;
 
-.products__checkbox {
+    &_wrapper {
+      margin: 20px 20px;
+      background-color: white;
+      box-shadow: 0 0 20px #ccc;
+      border: 0.5px solid #ccc;
+    }
+  }
+  &__checkbox {
     position: relative;
     top: 2.5px;
+    &_label {
+      display: block;
+      text-align: center;
 
+    }
+  }
 }
 
-.products__checkbox_label {
-    display: inline-block;
-    margin-left: 10%;
 
-}
+
+
 
