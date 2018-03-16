@@ -14,3 +14,5 @@ setupSlider();
 const checkboxArea = document.querySelector(".products__checkboxes");
 
 setupCheckboxes(checkboxArea, ingredients);
+
+alert("Hello! I am an alert box!!");
