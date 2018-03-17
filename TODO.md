@@ -1,3 +1,5 @@
-- [ ] Add webpack
+- [x] Add webpack
 - [ ] Add relevant pictures
-- [ ] Create dynamic area
+- [x] Create dynamic area
+- [ ] Finish and add Product
+- [ ] Refactor header-navigation to suite header.less

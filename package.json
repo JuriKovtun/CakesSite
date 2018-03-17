@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/JuriKovtun/CakesSite#readme",
   "dependencies": {
-    "css-loader": "^0.28.10",
+    "css-loader": "^0.28.11",
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
     "style-loader": "^0.20.3",
