@@ -23,6 +23,7 @@ class Product {
         let productCaption = document.createElement("h4");
         productCaption.classList.add("product__item-caption");
         productCaption.innerHTML = `${this.productCaption}`;
+        product.appendChild(productCaption);
 
         let productPrice = document.createElement("span");
         productPrice.classList.add("product__item-price");

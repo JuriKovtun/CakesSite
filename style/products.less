@@ -1,37 +1,123 @@
-.products {
-  background-color: white;
-
-  &__main {
-    background-color: crimson;
-    height: 100px;
-    width: 65%;
-    float: right;
-    margin: 0;
-
-  }
-  &__checkboxes {
-    //background-color: chartreuse;
-    display: inline-block;
-    width: 35%;
-    margin: 0;
-
-    &_wrapper {
-      margin: 20px 20px;
-      background-color: white;
-      box-shadow: 0 0 8px #ccc;
-      border: 0.5px solid #ccc;
-    }
-  }
-  &__checkbox {
-    position: relative;
-    top: 2.5px;
-    &_label {
-      display: block;
-      text-align: center;
-
-    }
-  }
+body {
+    margin: 10px;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #888888;
 }
+
+.product {
+    width: 280px;
+    height: 520px;
+    float: left;
+    margin: 10px;
+    box-shadow: 0 0 10px #aaa;
+    background-color: white;
+}
+
+.product__buy {
+    position: relative;
+}
+
+.product__buy-button_container {
+    position: absolute;
+    top: 473px;
+    width: 100%;
+    border-top: 1px solid #dddddd;
+}
+
+.product__buy-button {
+    background-color: purple;
+    color: #eeeeee;
+    display: block;
+    height: 35px;
+    width: 120px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.product__image {
+    width: 100%;
+}
+
+.product-text {
+    padding: 4px 15px;
+}
+
+.product__caption {
+    color: purple;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    min-height: 38px;
+    margin: 0;
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.product__price {
+    color: purple;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd;
+}
+
+.product__price-tag {
+    font-size: 1.8em;
+}
+
+.product__price-currency {
+    position: relative;
+    left: -5px;
+}
+
+.product__weight {
+    color: #646464;
+    position: relative;
+    left: 110px;
+}
+
+.product__composition {
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 1.2em;
+    border-bottom: 1px solid #dddddd;
+}
+
+.product__composition-list {
+    color: #646464;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.product__ingredients {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.fa-caret-down {
+    font-size: 1.5em;
+    float: right;
+    padding-right: 15px;
+}
+
+.product__ingredients-list {
+    display: none;
+    font-size: 0.8em;
+    color: #646464;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.active {
+    background-color: #dddddd;
+}
+
+.visible {
+    display: block;
+}
+
+
+
+
 
 
 
