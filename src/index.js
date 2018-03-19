@@ -8,6 +8,8 @@ import "../style/products.less"
 import {setupSlider} from "./setupSlider";
 import {setupCheckboxes} from "./setupCheckboxes";
 import ingredients from "../data/ingredients.js";
+import {product} from "./productClass.js";
+import {productRender} from "./productRender.js";
 
 setupSlider();
 

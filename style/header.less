@@ -7,6 +7,9 @@
   color: white;
   background: url("../img/header-navigation__background.jpg") no-repeat center center;
   text-align: center;
+  @media @smartphones {
+    height: 35vh;
+  }
 
   &__logo {
     float: left;
@@ -18,18 +21,23 @@
     margin-top: 3%;
     margin-left: 4%;
     @media @smartphones {
+      display: inline-block;
       float: none;
       margin: auto;
       margin-top: 5%;
-      display: inline-block;
+
     }
   }
   &__phone {
     color: #AAA8D4;
+    font-size: 1.2em;
     float: right;
     margin-top: 5%;
     margin-right: 4%;
     @media @smartphones {
+      color: #4f005e;
+      font-size: 1.8em;
+      font-weight: bold;
       float: none;
       display: block;
       text-align: center;
