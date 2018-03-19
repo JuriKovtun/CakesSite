@@ -7,3 +7,9 @@ database.map(item => {
 });
 
 console.log(productArray);
+
+// sandbox
+
+// const arrayOfObjects = [{name:"Bilbo", secondname:"Baggins"}, {name:"Gandalf", secondname:"Gray"}, {name:"Nazgul", secondname:"Dark"}];
+//
+// arrayOfObjects.map(item => console.log(item['name'], item['secondname']));
