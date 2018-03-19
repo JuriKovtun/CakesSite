@@ -20,12 +20,4 @@ const checkboxArea = document.querySelector(".products__checkboxes");
 
 setupCheckboxes(checkboxArea, ingredients);
 
-
-let productArray = [];
-
-database.map(item => {
-    let newProduct = new Product(item['productCategory'], item['imageSrcValue'], item['productCaption'], item['productPrice'], item['productComposition']);
-    productArray.push(newProduct);
-    newProduct.render();
-});
-
+const products = database.map(item => new Product(item['productCategory'], item['imageSrcValue'], item['productCaption'], item['productPrice'], item['productComposition']).render());

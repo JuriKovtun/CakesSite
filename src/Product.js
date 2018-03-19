@@ -38,6 +38,7 @@ class Product {
         product.appendChild(productPrice);
         product.appendChild(productIngredients);
         document.body.appendChild(product);
+        return this;
 
     }
 
