@@ -1,4 +1,4 @@
-class product {
+class Product {
 
     constructor(productCategory, imageSrcValue, productCaption, productPrice, productComposition) {
 
@@ -42,3 +42,6 @@ class product {
 
 
 }
+
+
+export default Product;
