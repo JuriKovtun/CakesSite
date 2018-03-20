@@ -10,7 +10,7 @@ class Product {
 
     }
 
-    render() {
+    render(entryPoint) {
         let product = document.createElement("div");
         product.classList.add("product__item");
         product.setAttribute("productCategory", this.productCategory);
@@ -37,7 +37,7 @@ class Product {
         product.appendChild(productCaption);
         product.appendChild(productPrice);
         product.appendChild(productIngredients);
-        document.body.appendChild(product);
+        entryPoint.appendChild(product);
         return this;
 
     }

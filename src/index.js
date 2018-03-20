@@ -11,8 +11,9 @@ import data from "../data/ingredients.js";
 import Product from "./Product";
 
 
-const ingredients = data[0];
-const database = data[1];
+const database = data;
+const ingredients = data.map(item => item['productCategory']);
+
 
 setupSlider();
 
@@ -20,4 +21,9 @@ const checkboxArea = document.querySelector(".products__checkboxes");
 
 setupCheckboxes(checkboxArea, ingredients);
 
-const products = database.map(item => new Product(item['productCategory'], item['imageSrcValue'], item['productCaption'], item['productPrice'], item['productComposition']).render());
+const productsLocation = document.body;
+const products = database.map(item => new Product(item['productCategory'], item['imageSrcValue'], item['productCaption'], item['productPrice'], item['productComposition']).render(productsLocation));
+
+
+
+
