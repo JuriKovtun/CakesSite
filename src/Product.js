@@ -78,13 +78,11 @@ class Product {
         productImage.setAttribute("alt", "image error");
 
         let productCaption = document.createElement("h4");
-        productCaption.classList.add("product__caption");
-        productCaption.classList.add("product-text");
+        productCaption.classList.add("product__caption", "product-text");
         productCaption.innerHTML = `${this.productCaption}`;
 
         let productPrice = document.createElement("div");
-        productPrice.classList.add("product__price");
-        productPrice.classList.add("product-text");
+        productPrice.classList.add("product__price", "product-text");
 
         let priceTag = document.createElement("span");
         priceTag.classList.add("product__price-tag");
@@ -99,8 +97,7 @@ class Product {
         weight.innerHTML = `${this.productWeight}`;
 
         let productComposition = document.createElement("div");
-        productComposition.classList.add("product__composition");
-        productComposition.classList.add("product-text");
+        productComposition.classList.add("product__composition", "product-text");
         productComposition.innerHTML = "Состав: ";
 
         let productCompositionList = document.createElement("span");
@@ -108,8 +105,7 @@ class Product {
         productCompositionList.innerHTML = `${this.productComposition}`;
 
         let extraIngredients = document.createElement("div");
-        extraIngredients.classList.add("product__ingredients");
-        extraIngredients.classList.add("product-text");
+        extraIngredients.classList.add("product__ingredients", "product-text");
         extraIngredients.setAttribute("onclick", "setupDropdown(this)");
         extraIngredients.innerHTML = "Дополнительные ингредиенты:";
 
@@ -118,8 +114,7 @@ class Product {
         fa.classList.add("fa-caret-down");
 
         let extraIngredientsList = document.createElement("p");
-        extraIngredientsList.classList.add("product__ingredients-list");
-        extraIngredientsList.classList.add("product-text");
+        extraIngredientsList.classList.add("product__ingredients-list", "product-text");
         extraIngredientsList.innerHTML = "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit.";
 
 

@@ -7,7 +7,7 @@ import "../style/products.less"
 
 import {setupSlider} from "./setupSlider";
 import {setupCheckboxes} from "./setupCheckboxes";
-import {setupDropdown} from "./setupDropdown";
+import setupDropdown from "./setupDropdown";
 import data from "../data/ingredients.js";
 import Product from "./Product";
 
@@ -21,7 +21,7 @@ setupSlider();
 const checkboxArea = document.querySelector(".products__checkboxes");
 setupCheckboxes(checkboxArea, ingredients);
 
-// setupDropdown(dropdownContent);
+//setupDropdown(dropdownContent);
 
 const productsLocation = document.querySelector(".products__main");
 const products = database.map(item => new Product(item['productCategory'], item['imageSrcValue'], item['productCaption'], item['productPrice'], item['productWeight'], item['productComposition']).render(productsLocation));
