@@ -12,7 +12,7 @@ import Product from "./Product";
 
 
 const database = data;
-const ingredients = data.map(item => item['productCategory']);
+const ingredients = [...new Set(data.map(item => item.productCategory))];
 
 
 setupSlider();
@@ -21,8 +21,14 @@ const checkboxArea = document.querySelector(".products__checkboxes");
 
 setupCheckboxes(checkboxArea, ingredients);
 
-const productsLocation = document.body;
-const products = database.map(item => new Product(item['productCategory'], item['imageSrcValue'], item['productCaption'], item['productPrice'], item['productComposition']).render(productsLocation));
+const productsLocation = document.querySelector(".products__main");
+const products = database.map(item => new Product(item['productCategory'], item['imageSrcValue'], item['productCaption'], item['productPrice'], item['productWeight'], item['productComposition']).render(productsLocation));
+
+function classToggle (dropdownContent) {
+    dropdownContent.classList.toggle("active");
+    dropdownContent.nextElementSibling.classList.toggle("visible");
+}
+
 
 
 
