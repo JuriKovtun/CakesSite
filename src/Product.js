@@ -110,7 +110,7 @@ class Product {
         let extraIngredients = document.createElement("div");
         extraIngredients.classList.add("product__ingredients");
         extraIngredients.classList.add("product-text");
-        extraIngredients.setAttribute("onclick", "classToggle(this)");
+        extraIngredients.setAttribute("onclick", "setupDropdown(this)");
         extraIngredients.innerHTML = "Дополнительные ингредиенты:";
 
         let fa = document.createElement("i");
@@ -121,16 +121,6 @@ class Product {
         extraIngredientsList.classList.add("product__ingredients-list");
         extraIngredientsList.classList.add("product-text");
         extraIngredientsList.innerHTML = "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-
-
-
-
-
-
-
-
-
-
 
 
         product.appendChild(productBuy);
@@ -147,11 +137,6 @@ class Product {
         product.appendChild(extraIngredients);
         extraIngredients.appendChild(fa);
         product.appendChild(extraIngredientsList);
-
-
-
-
-
 
         location.appendChild(product);
         return this;
