@@ -22,6 +22,11 @@ const filterCheckboxes = (productsLocation, checkBoxes, products) => {
 
     productsLocation.innerHTML = "";
     let checkedBoxes = checkBoxes.filter((el) => el.lastChild.checked);
+    if (!checkedBoxes.length) {
+        products.map((el) => el.render(productsLocation));
+        return;
+    }
+
 
     let dataToRender = [];
     for (let i = 0; i < products.length; ++i) {

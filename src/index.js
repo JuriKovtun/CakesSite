@@ -9,6 +9,7 @@ import {setupSlider} from "./setupSlider";
 import {renderCheckboxes, filterCheckboxes} from "./setupCheckboxes";
 import setupDropdown from "./setupDropdown";
 import data from "../data/ingredients.js";
+import sliderImages from "../data/sliderImages.js";
 import Product from "./Product";
 
 
@@ -16,7 +17,7 @@ const database = data;
 const categories = [...new Set(data.map(item => item.productCategory))];
 
 
-setupSlider();
+setupSlider(sliderImages);
 
 const checkboxArea = document.querySelector(".products__checkboxes");
 const checkBoxes = renderCheckboxes(checkboxArea, categories);

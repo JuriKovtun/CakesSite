@@ -1,11 +1,10 @@
-const setupSlider = () => {
+const setupSlider = (images) => {
     let buttonNext = document.querySelector(".carousel__button_next");
     let buttonPrev = document.querySelector(".carousel__button_prev");
     let sliderImage = document.querySelector(".carousel__image");
 
     const SPEED_OF_FADING = 0.12;
-
-    let images = ["./img/carousel_pics/carousel02.jpg", "./img/carousel_pics/carousel01.jpg", "./img/carousel_pics/carousel03.jpg"];
+    sliderImage.src = images[1];
 
     let currentImage = 1;
 

@@ -1,0 +1,1 @@
+export default ["./img/carousel_pics/carousel02.jpg", "./img/carousel_pics/carousel01.jpg", "./img/carousel_pics/carousel03.jpg"];
