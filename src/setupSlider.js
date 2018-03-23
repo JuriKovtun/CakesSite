@@ -5,7 +5,7 @@ const setupSlider = () => {
 
     const SPEED_OF_FADING = 0.12;
 
-    let images = ["https://www.metaslider.com/wp-content/uploads/2014/11/mountains1.jpg", "http://wowslider.com/sliders/demo-77/data1/images/road220058.jpg"];
+    let images = ["./img/carousel_pics/carousel02.jpg", "./img/carousel_pics/carousel01.jpg", "./img/carousel_pics/carousel03.jpg"];
 
     let currentImage = 1;
 

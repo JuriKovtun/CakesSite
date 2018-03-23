@@ -13,12 +13,12 @@ export default [
         productCaption: "Plätzchen 002",
         productPrice: "222",
         productWeight: "вес: 123 г",
-        productComposition: "Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu."
+        productComposition: "Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu. Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu."
     },
     {
         productCategory: "Jam",
         imageSrcValue: "./img/product_pics/jam/jam001.jpg",
-        productCaption: "Marmelade 001",
+        productCaption: "Marmelade 001 Lecker lecker lecker",
         productPrice: "333",
         productWeight: "вес: 123 г",
         productComposition: "Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu."
