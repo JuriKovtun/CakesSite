@@ -3,7 +3,7 @@ import "../style/carousel.less"
 import "../style/common.less"
 import "../style/footer.less"
 import "../style/header.less"
-import "../style/products.less"
+import "../style/product.less"
 
 import {setupSlider} from "./setupSlider";
 import {setupCheckboxes} from "./setupCheckboxes";
