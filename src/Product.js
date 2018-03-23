@@ -65,7 +65,7 @@ class Product {
         productBuy.classList.add("product__buy");
 
         let productBuyContainer = document.createElement("div");
-        productBuyContainer.classList.add("product__buy-button_container");
+        productBuyContainer.classList.add("product__buy-button_wrapper");
 
         let productBuyButton = document.createElement("button");
         productBuyButton.classList.add("product__buy-button");

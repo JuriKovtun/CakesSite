@@ -1,5 +1,8 @@
-- [x] Add webpack
-- [ ] Add relevant pictures
-- [x] Create dynamic area
-- [ ] Finish and add Product
+- [ ] add relevant pictures to the Carousel
+- [ ] setup Carousel to fit new pics
+- [ ] change "flash up" transition
+- [ ] use brand violet color
 - [ ] Refactor header-navigation to suite header.less
+- [ ] add motto style
+- [ ] add slogan style
+- [ ] Refactor product's style to suite .less
