@@ -9,7 +9,7 @@
 .product {
   width: 225px;
   margin: 5px;
-  height: 520px;
+  height: 470px;
   display: inline-block;
   vertical-align: top;
   box-shadow: 0 0 10px #aaa;
@@ -24,7 +24,7 @@
 
   &__buy-button_wrapper {
     position: absolute;
-    top: 473px;
+    top: 432px;
     width: 100%;
     border-top: 1px solid #dddddd;
   }
@@ -38,7 +38,7 @@
     height: 30px;
     width: 100px;
     margin: auto;
-    margin-top: 8px;
+    margin-top: 3px;
   }
 
   &__image {
@@ -100,39 +100,54 @@
     text-align: justify;
   }
 
-  &__extraIngredients {
+}
+
+.ingredients {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 5px;
+
+  &-list {
+    display: block;
+
+  }
+
+  &__checkbox-container {
+    margin-top: 5px;
+    clear: both;
+
+  }
+
+  &-checkbox {
+    height: 18px;
+    width: 18px;
+    float: left;
+
+  }
+
+  &-label {
     font-size: 0.8em;
     font-weight: bold;
-
-    &-list {
-      display: block;
-      margin-top: 5px;
-    }
-
-    &__checkbox-wrapper {
-      margin-top: 5px;
-    }
-
-    &-label {
-      font-size: 0.8em;
-      font-weight: bold;
-    }
-
-    &-price {
-      float: right;
-      color: purple;
-
-    }
+    position: relative;
+    top: 5px;
+    left: 5px;
 
 
   }
 
+  &-price {
+    float: right;
+    color: purple;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 4px;
+  }
+
+  &-currency {
+    font-size: 0.6em;
 
 
-
-
-
-
+  }
 
 }
 

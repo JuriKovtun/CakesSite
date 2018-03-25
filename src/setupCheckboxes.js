@@ -31,7 +31,7 @@ const filterCheckboxes = (productsLocation, checkBoxes, products) => {
     let dataToRender = [];
     for (let i = 0; i < products.length; ++i) {
         for (let j = 0; j < checkedBoxes.length; ++j) {
-            if (products[i].productCategory === checkedBoxes[j].innerText) {
+            if (products[i].category === checkedBoxes[j].innerText) {
                 dataToRender.push(products[i]);
                 break;
             }

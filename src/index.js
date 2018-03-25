@@ -14,7 +14,7 @@ import Product from "./Product";
 
 
 const database = data;
-const categories = [...new Set(data.map(item => item.productCategory))];
+const categories = [...new Set(data.map(item => item.category))];
 
 
 setupSlider(sliderImages);
@@ -26,7 +26,7 @@ const checkBoxes = renderCheckboxes(checkboxArea, categories);
 //setupDropdown(dropdownContent);
 
 const productsLocation = document.querySelector(".products__main");
-const products = database.map(item => new Product(item['productCategory'], item['imageSrcValue'], item['productCaption'], item['productPrice'], item['productWeight'], item['productComposition'], item['extraIngredients']).render(productsLocation));
+const products = database.map(item => new Product(item['category'], item['imageSrcValue'], item['caption'], item['price'], item['weight'], item['composition'], item['extraIngredients']).render(productsLocation));
 
 
 checkboxArea.addEventListener("click", (ev) => {

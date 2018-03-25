@@ -1,11 +1,11 @@
 class Product {
-    constructor(productCategory, imageSrcValue, productCaption, productPrice, productWeight, productComposition, ingredients) {
-        this.productCategory = productCategory;
+    constructor(category, imageSrcValue, caption, price, weight, composition, ingredients) {
+        this.category = category;
         this.imageSrcValue = imageSrcValue;
-        this.productCaption = productCaption;
-        this.productPrice = productPrice;
-        this.productWeight = productWeight;
-        this.productComposition = productComposition;
+        this.caption = caption;
+        this.price = price;
+        this.weight = weight;
+        this.composition = composition;
         this.ingredients = ingredients;
 
     }
@@ -13,7 +13,7 @@ class Product {
     render(location) {
         let product = document.createElement("div");
         product.classList.add("product");
-        product.setAttribute("category", this.productCategory);
+        product.setAttribute("category", this.category);
 
         let productBuy = document.createElement("div");
         productBuy.classList.add("product__buy");
@@ -33,14 +33,14 @@ class Product {
 
         let productCaption = document.createElement("h4");
         productCaption.classList.add("product__caption", "product-text");
-        productCaption.innerHTML = `${this.productCaption}`;
+        productCaption.innerHTML = `${this.caption}`;
 
         let productPrice = document.createElement("div");
         productPrice.classList.add("product__price", "product-text");
 
         let priceTag = document.createElement("span");
         priceTag.classList.add("product__price-tag");
-        priceTag.innerHTML = `${this.productPrice}`;
+        priceTag.innerHTML = `${this.price}`;
 
         let priceCurrency = document.createElement("span");
         priceCurrency.classList.add("product__price-currency");
@@ -48,7 +48,7 @@ class Product {
 
         let weight = document.createElement("span");
         weight.classList.add("product__weight");
-        weight.innerHTML = `${this.productWeight}`;
+        weight.innerHTML = `${this.weight}`;
 
         let productComposition = document.createElement("div");
         productComposition.classList.add("product__composition", "product-text");
@@ -56,15 +56,15 @@ class Product {
 
         let productCompositionList = document.createElement("span");
         productCompositionList.classList.add("product__composition-list");
-        productCompositionList.innerHTML = `${this.productComposition}`;
+        productCompositionList.innerHTML = `${this.composition}`;
 
         let extraIngredients = document.createElement("div");
-        extraIngredients.classList.add("product__extraIngredients", "product-text");
+        extraIngredients.classList.add("ingredients", "product-text");
         extraIngredients.setAttribute("onclick", "setupDropdown(this)");
         extraIngredients.innerHTML = "Дополнительные ингредиенты:";
 
         let extraIngredientsList = document.createElement("div");
-        extraIngredientsList.classList.add("product__extraIngredients-list", "product-text");
+        extraIngredientsList.classList.add("ingredients-list", "product-text");
 
 
         product.appendChild(productBuy);
@@ -88,23 +88,29 @@ class Product {
 
     renderIngredients(ingredient, price) {
         let extraWrapper = document.createElement("div");
-        extraWrapper.classList.add("product__extraIngredients__checkbox-wrapper");
+        extraWrapper.classList.add("ingredients__checkbox-container");
 
         let extraCheckbox = document.createElement("input");
-        extraCheckbox.classList.add("product__extraIngredients-checkbox");
+        extraCheckbox.classList.add("ingredients-checkbox");
         extraCheckbox.setAttribute("type", "checkbox");
 
         let extraLabel = document.createElement("label");
-        extraLabel.classList.add("product__extraIngredients-label");
+        extraLabel.classList.add("ingredients-label");
         extraLabel.innerHTML = ingredient;
 
         let extraPrice = document.createElement("span");
-        extraPrice.classList.add("product__extraIngredients-price");
+        extraPrice.classList.add("ingredients-price");
         extraPrice.innerHTML = price;
+
+        let extraCurrency = document.createElement("span");
+        extraCurrency.classList.add("ingredients-currency");
+        extraCurrency.innerHTML = " грн";
+
 
         extraWrapper.appendChild(extraCheckbox);
         extraWrapper.appendChild(extraLabel);
         extraWrapper.appendChild(extraPrice);
+        extraPrice.appendChild(extraCurrency);
         return extraWrapper;
 
     }
