@@ -26,7 +26,7 @@ const checkBoxes = renderCheckboxes(checkboxArea, categories);
 //setupDropdown(dropdownContent);
 
 const productsLocation = document.querySelector(".products__main");
-const products = database.map(item => new Product(item['productCategory'], item['imageSrcValue'], item['productCaption'], item['productPrice'], item['productWeight'], item['productComposition']).render(productsLocation));
+const products = database.map(item => new Product(item['productCategory'], item['imageSrcValue'], item['productCaption'], item['productPrice'], item['productWeight'], item['productComposition'], item['extraIngredient_1'], item['extraPrice_1']).render(productsLocation));
 
 
 checkboxArea.addEventListener("click", (ev) => {

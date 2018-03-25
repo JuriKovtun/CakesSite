@@ -1,6 +1,6 @@
 class Product {
 
-    constructor (productCategory, imageSrcValue, productCaption, productPrice, productWeight, productComposition) {
+    constructor(productCategory, imageSrcValue, productCaption, productPrice, productWeight, productComposition, extraIngredient_1, extraPrice_1) {
 
         this.productCategory = productCategory;
         this.imageSrcValue = imageSrcValue;
@@ -8,10 +8,17 @@ class Product {
         this.productPrice = productPrice;
         this.productWeight = productWeight;
         this.productComposition = productComposition;
-
+        this.extraIngredient_1 = extraIngredient_1;
+        this.extraPrice_1 = extraPrice_1;
+        // this.extraIngredient_2 = extraIngredient_2;
+        // this.extraPrice_2 = extraPrice_2;
+        // this.extraIngredient_3 = extraIngredient_3;
+        // this.extraPrice_3 = extraPrice_3;
+        // this.extraIngredient_4 = extraIngredient_4;
+        // this.extraPrice_4 = extraPrice_4;
     }
 
-    render (location) {
+    render(location) {
         let product = document.createElement("div");
         product.classList.add("product");
         product.setAttribute("category", this.productCategory);
@@ -60,17 +67,28 @@ class Product {
         productCompositionList.innerHTML = `${this.productComposition}`;
 
         let extraIngredients = document.createElement("div");
-        extraIngredients.classList.add("product__ingredients", "product-text");
+        extraIngredients.classList.add("product__extraIngredients", "product-text");
         extraIngredients.setAttribute("onclick", "setupDropdown(this)");
         extraIngredients.innerHTML = "Дополнительные ингредиенты:";
 
-        let fa = document.createElement("i");
-        fa.classList.add("fa");
-        fa.classList.add("fa-caret-down");
+        let extraIngredientsList = document.createElement("div");
+        extraIngredientsList.classList.add("product__extraIngredients-list", "product-text");
 
-        let extraIngredientsList = document.createElement("p");
-        extraIngredientsList.classList.add("product__ingredients-list", "product-text");
-        extraIngredientsList.innerHTML = "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+        let extraWrapper = document.createElement("div");
+        extraWrapper.classList.add("product__extraIngredients__checkbox-wrapper");
+
+        let extraCheckbox = document.createElement("input");
+        extraCheckbox.classList.add("product__extraIngredients-checkbox");
+        extraCheckbox.setAttribute("type", "checkbox");
+
+        let extraLabel = document.createElement("label");
+        extraLabel.classList.add("product__extraIngredients-label");
+        extraLabel.innerHTML = this.extraIngredient_1;
+
+
+        let extraPrice = document.createElement("span");
+        extraPrice.classList.add("product__extraIngredients-price");
+        extraPrice.innerHTML = this.extraPrice_1;
 
 
         product.appendChild(productBuy);
@@ -85,11 +103,42 @@ class Product {
         product.appendChild(productComposition);
         productComposition.appendChild(productCompositionList);
         product.appendChild(extraIngredients);
-        extraIngredients.appendChild(fa);
         product.appendChild(extraIngredientsList);
+        extraIngredientsList.appendChild(extraWrapper);
+        extraWrapper.appendChild(extraCheckbox);
+        extraWrapper.appendChild(extraLabel);
+        extraWrapper.appendChild(extraPrice);
+
 
         location.appendChild(product);
         return this;
     }
+
+    renderIngredient(ExIn, ExPr) {
+
+        let extraWrapper = document.createElement("div");
+        extraWrapper.classList.add("product__extraIngredients__checkbox-wrapper");
+
+        let extraCheckbox = document.createElement("input");
+        extraCheckbox.classList.add("product__extraIngredients-checkbox");
+        extraCheckbox.setAttribute("type", "checkbox");
+
+        let extraLabel = document.createElement("label");
+        extraLabel.classList.add("product__extraIngredients-label");
+        extraLabel.innerHTML = ExIn;
+
+        let extraPrice = document.createElement("span");
+        extraPrice.classList.add("product__extraIngredients-price");
+        extraPrice.innerHTML = ExPr;
+
+        extraWrapper.appendChild(extraCheckbox);
+        extraWrapper.appendChild(extraLabel);
+        extraWrapper.appendChild(extraPrice);
+
+        document.querySelector("product__extraIngredients-list").appendChild(extraWrapper);
+        return this;
+
+    }
 }
+
 export default Product;

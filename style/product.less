@@ -7,12 +7,11 @@
 }
 
 .product {
-  width: 23%;
+  width: 225px;
   margin: 5px;
   height: 520px;
   display: inline-block;
   vertical-align: top;
-
   box-shadow: 0 0 10px #aaa;
   background-color: white;
   font-size: 14px;
@@ -39,7 +38,7 @@
     height: 30px;
     width: 100px;
     margin: auto;
-    margin-top: 6px;
+    margin-top: 8px;
   }
 
   &__image {
@@ -101,18 +100,40 @@
     text-align: justify;
   }
 
-  &__ingredients {
+  &__extraIngredients {
     font-size: 0.8em;
     font-weight: bold;
+
+    &-list {
+      display: block;
+      margin-top: 5px;
+    }
+
+    &__checkbox-wrapper {
+      margin-top: 5px;
+    }
+
+    &-label {
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+
+    &-price {
+      float: right;
+      color: purple;
+
+    }
+
+
   }
 
-  &__ingredients-list {
-    display: none;
-    font-size: 0.8em;
-    color: #646464;
-    font-weight: normal;
-    text-align: justify;
-  }
+
+
+
+
+
+
+
 }
 
 .active {

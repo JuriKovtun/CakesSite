@@ -47,6 +47,49 @@
     <section class="products__checkboxes">
     </section>
     <section class="products__main">
+
+        <!--product sample-->
+
+        <div class="product" category="Торты">
+            <div class="product__buy">
+                <div class="product__buy-button_wrapper">
+                    <button class="product__buy-button" onclick="alert('Well done!')">КУПИТЬ</button>
+                </div>
+            </div>
+            <img class="product__image" src="./img/product_pics/cakes/cakes001.jpg" alt="image error"><h4
+                class="product__caption product-text">Шоколадный с пряной вишней</h4>
+            <div class="product__price product-text"><span class="product__price-tag">500</span><span
+                    class="product__price-currency">грн</span><span class="product__weight">вес: 123 г</span></div>
+            <div class="product__composition product-text">Состав: <span class="product__composition-list">шоколад, какао-мука, вишня, пряности</span>
+            </div>
+            <div class="product__extraIngredients product-text" onclick="setupDropdown(this)">Дополнительные
+                ингредиенты:
+            </div>
+            <div class="product__extraIngredients-list product-text">
+                <div class="product__extraIngredients__checkbox-wrapper">
+                    <input class="product__extraIngredients-checkbox" type="checkbox">
+                    <label class="product__extraIngredients-label">Шоколад</label>
+                    <span class="product__extraIngredients-price">20 грн</span>
+                </div>
+                <div class="product__extraIngredients__checkbox-wrapper">
+                    <input class="product__extraIngredients_checkbox" type="checkbox">
+                    <label class="product__extraIngredients-label">Карамель</label>
+                    <span class="product__extraIngredients-price">20 грн</span>
+                </div>
+                <div class="product__extraIngredients__checkbox-wrapper">
+                    <input class="product__extraIngredients_checkbox" type="checkbox">
+                    <label class="product__extraIngredients-label">Орехи</label>
+                    <span class="product__extraIngredients-price">15 грн</span>
+                </div>
+                <div class="product__extraIngredients__checkbox-wrapper">
+                    <input class="product__extraIngredients_checkbox" type="checkbox">
+                    <label class="product__extraIngredients-label">Алкоголь</label>
+                    <span class="product__extraIngredients-price">25 грн</span>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
 </main>

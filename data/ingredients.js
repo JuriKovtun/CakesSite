@@ -6,6 +6,14 @@ export default [
         productPrice: "500",
         productWeight: "вес: 123 г",
         productComposition: "шоколад, какао-мука, вишня, пряности",
+        extraIngredient_1:"Шоколад",
+        extraPrice_1:"20",
+        extraIngredient_2:"Карамель",
+        extraPrice_2:"20",
+        extraIngredient_3:"Орехи",
+        extraPrice_3:"15",
+        extraIngredient_4:"Алкоголь",
+        extraPrice_4:"25"
     },
     {
         productCategory: "Чизкейки",
@@ -13,7 +21,15 @@ export default [
         productCaption: "Чизкейк Нью-Йорк",
         productPrice: "500",
         productWeight: "вес: 123 г",
-        productComposition: "песочная основа, сливки, кремсыр"
+        productComposition: "песочная основа, сливки, кремсыр",
+        extraIngredient_1:"Орехи",
+        extraPrice_1:"20",
+        extraIngredient_2:"Шоколад",
+        extraPrice_2:"20",
+        extraIngredient_3:"Сухофрукты",
+        extraPrice_3:"20",
+        extraIngredient_4:"Карамель",
+        extraPrice_4:"30"
     },
     {
         productCategory: "Печенье",
@@ -21,7 +37,15 @@ export default [
         productCaption: "Овсяное печенье",
         productPrice: "15",
         productWeight: "вес: 123 г",
-        productComposition: "овсяные хлопья, мёд"
+        productComposition: "овсяные хлопья, мёд",
+        extraIngredient_1:"Клюква",
+        extraPrice_1:"10",
+        extraIngredient_2:"Орехи",
+        extraPrice_2:"15",
+        extraIngredient_3:"Конжут",
+        extraPrice_3:"5",
+        extraIngredient_4:"Лён",
+        extraPrice_4:"5"
     },
     {
         productCategory: "Капкейки",
@@ -29,7 +53,15 @@ export default [
         productCaption: "Капкейк ванильный",
         productPrice: "17",
         productWeight: "вес: 123 г",
-        productComposition: "ванильный бисквит, крем сыр"
+        productComposition: "ванильный бисквит, крем сыр",
+        extraIngredient_1:"Карамель",
+        extraPrice_1:"15",
+        extraIngredient_2:"Фрукт.компоте",
+        extraPrice_2:"13",
+        extraIngredient_3:"Шоколад",
+        extraPrice_3:"10",
+        extraIngredient_4:"Ванильный крем",
+        extraPrice_4:"10"
     },
     {
         productCategory: "Десерты",
@@ -37,7 +69,15 @@ export default [
         productCaption: "Шоколадный трайфл",
         productPrice: "30",
         productWeight: "вес: 123 г",
-        productComposition: "супершоколадный бисквит, сметанный крем, шоколад"
+        productComposition: "супершоколадный бисквит, сметанный крем, шоколад",
+        extraIngredient_1:"Орехи",
+        extraPrice_1:"15",
+        extraIngredient_2:"Карамель",
+        extraPrice_2:"15",
+        extraIngredient_3:"Фрукт.компоте",
+        extraPrice_3:"20",
+        extraIngredient_4:"",
+        extraPrice_4:""
     },
     {
         productCategory: "Полезные сладости",
@@ -45,7 +85,15 @@ export default [
         productCaption: "Зефир",
         productPrice: "15",
         productWeight: "вес: 123 г",
-        productComposition: "белок, фруктовое пюре, агар-агар 15 грн"
+        productComposition: "белок, фруктовое пюре, агар-агар",
+        extraIngredient_1:"",
+        extraPrice_1:"",
+        extraIngredient_2:"",
+        extraPrice_2:"",
+        extraIngredient_3:"",
+        extraPrice_3:"",
+        extraIngredient_4:"",
+        extraPrice_4:""
     },
     {
         productCategory: "Полезные сладости",
@@ -53,7 +101,8 @@ export default [
         productCaption: "Пастила",
         productPrice: "60-100",
         productWeight: "вес: 123 г",
-        productComposition: "фруктовое пюре"
+        productComposition: "фруктовое пюре",
+
     },
 
     {
@@ -62,7 +111,13 @@ export default [
         productCaption: "Фруктовая кростата",
         productPrice: "200",
         productWeight: "вес: 123 г",
-        productComposition: "песочное тесто, фрукты"
+        productComposition: "песочное тесто, фрукты",
+        extraIngredient_1:"Орехи",
+        extraPrice_1:"10",
+        extraIngredient_2:"Специи",
+        extraPrice_2:"5",
+        extraIngredient_3:"Фруктовое ассорти",
+        extraPrice_3:"15"
     },
     {
         productCategory: "Наборы",
