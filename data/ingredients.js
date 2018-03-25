@@ -6,14 +6,10 @@ export default [
         productPrice: "500",
         productWeight: "вес: 123 г",
         productComposition: "шоколад, какао-мука, вишня, пряности",
-        extraIngredient_1:"Шоколад",
-        extraPrice_1:"20",
-        extraIngredient_2:"Карамель",
-        extraPrice_2:"20",
-        extraIngredient_3:"Орехи",
-        extraPrice_3:"15",
-        extraIngredient_4:"Алкоголь",
-        extraPrice_4:"25"
+        extraIngredients: [{ingredient: "Шоколад", price: "20"},
+            {ingredient: "Карамель", price: "20"},
+            {ingredient: "Орехи", price: "15"},
+            {ingredient: "Алкоголь", price: "25"}]
     },
     {
         productCategory: "Чизкейки",
@@ -22,14 +18,10 @@ export default [
         productPrice: "500",
         productWeight: "вес: 123 г",
         productComposition: "песочная основа, сливки, кремсыр",
-        extraIngredient_1:"Орехи",
-        extraPrice_1:"20",
-        extraIngredient_2:"Шоколад",
-        extraPrice_2:"20",
-        extraIngredient_3:"Сухофрукты",
-        extraPrice_3:"20",
-        extraIngredient_4:"Карамель",
-        extraPrice_4:"30"
+        extraIngredients: [{ingredient: "Орехи", price: "20"},
+            {ingredient: "Шоколад", price: "20"},
+            {ingredient: "Сухофрукты", price: "20"},
+            {ingredient: "Карамель", price: "30"}]
     },
     {
         productCategory: "Печенье",
@@ -38,14 +30,10 @@ export default [
         productPrice: "15",
         productWeight: "вес: 123 г",
         productComposition: "овсяные хлопья, мёд",
-        extraIngredient_1:"Клюква",
-        extraPrice_1:"10",
-        extraIngredient_2:"Орехи",
-        extraPrice_2:"15",
-        extraIngredient_3:"Конжут",
-        extraPrice_3:"5",
-        extraIngredient_4:"Лён",
-        extraPrice_4:"5"
+        extraIngredients: [{ingredient: "Клюква", price: "10"},
+            {ingredient: "Орехи", price: "15"},
+            {ingredient: "Конжут", price: "5"},
+            {ingredient: "Лён", price: "5"}]
     },
     {
         productCategory: "Капкейки",
@@ -54,14 +42,10 @@ export default [
         productPrice: "17",
         productWeight: "вес: 123 г",
         productComposition: "ванильный бисквит, крем сыр",
-        extraIngredient_1:"Карамель",
-        extraPrice_1:"15",
-        extraIngredient_2:"Фрукт.компоте",
-        extraPrice_2:"13",
-        extraIngredient_3:"Шоколад",
-        extraPrice_3:"10",
-        extraIngredient_4:"Ванильный крем",
-        extraPrice_4:"10"
+        extraIngredients: [{ingredient: "Карамель", price: "15"},
+            {ingredient: "Фрукт.компоте", price: "13"},
+            {ingredient: "Шоколад", price: "10"},
+            {ingredient: "Ванильный крем", price: "10"}]
     },
     {
         productCategory: "Десерты",
@@ -70,40 +54,28 @@ export default [
         productPrice: "30",
         productWeight: "вес: 123 г",
         productComposition: "супершоколадный бисквит, сметанный крем, шоколад",
-        extraIngredient_1:"Орехи",
-        extraPrice_1:"15",
-        extraIngredient_2:"Карамель",
-        extraPrice_2:"15",
-        extraIngredient_3:"Фрукт.компоте",
-        extraPrice_3:"20",
-        extraIngredient_4:"",
-        extraPrice_4:""
+        extraIngredients: [{ingredient: "Орехи", price: "15"},
+            {ingredient: "Карамель", price: "15"},
+            {ingredient: "Фрукт.компоте", price: "20"},
+            {ingredient: "Empty", price: "Free"}]
     },
-    {
-        productCategory: "Полезные сладости",
-        imageSrcValue: "./img/product_pics/marshmallow/marshmallow001.jpg",
-        productCaption: "Зефир",
-        productPrice: "15",
-        productWeight: "вес: 123 г",
-        productComposition: "белок, фруктовое пюре, агар-агар",
-        extraIngredient_1:"",
-        extraPrice_1:"",
-        extraIngredient_2:"",
-        extraPrice_2:"",
-        extraIngredient_3:"",
-        extraPrice_3:"",
-        extraIngredient_4:"",
-        extraPrice_4:""
-    },
-    {
-        productCategory: "Полезные сладости",
-        imageSrcValue: "./img/product_pics/marshmallow/marshmallow002.jpg",
-        productCaption: "Пастила",
-        productPrice: "60-100",
-        productWeight: "вес: 123 г",
-        productComposition: "фруктовое пюре",
-
-    },
+    // {
+    //     productCategory: "Полезные сладости",
+    //     imageSrcValue: "./img/product_pics/marshmallow/marshmallow001.jpg",
+    //     productCaption: "Зефир",
+    //     productPrice: "15",
+    //     productWeight: "вес: 123 г",
+    //     productComposition: "белок, фруктовое пюре, агар-агар",
+    // },
+    // {
+    //     productCategory: "Полезные сладости",
+    //     imageSrcValue: "./img/product_pics/marshmallow/marshmallow002.jpg",
+    //     productCaption: "Пастила",
+    //     productPrice: "60-100",
+    //     productWeight: "вес: 123 г",
+    //     productComposition: "фруктовое пюре",
+    //
+    // },
 
     {
         productCategory: "Домашняя выпечка",
@@ -112,20 +84,17 @@ export default [
         productPrice: "200",
         productWeight: "вес: 123 г",
         productComposition: "песочное тесто, фрукты",
-        extraIngredient_1:"Орехи",
-        extraPrice_1:"10",
-        extraIngredient_2:"Специи",
-        extraPrice_2:"5",
-        extraIngredient_3:"Фруктовое ассорти",
-        extraPrice_3:"15"
+        extraIngredients: [{ingredient: "Орехи", price: "10"},
+            {ingredient: "Специи", price: "5"},
+            {ingredient: "Фруктовое ассорти", price: "15"}]
     },
-    {
-        productCategory: "Наборы",
-        imageSrcValue: "./img/product_pics/cookies/cookies001.jpg",
-        productCaption: "Пряники",
-        productPrice: "25-50",
-        productWeight: "вес: 123 г",
-        productComposition: "имбирное тесто, специи, мёд"
-    },
+    // {
+    //     productCategory: "Наборы",
+    //     imageSrcValue: "./img/product_pics/cookies/cookies001.jpg",
+    //     productCaption: "Пряники",
+    //     productPrice: "25-50",
+    //     productWeight: "вес: 123 г",
+    //     productComposition: "имбирное тесто, специи, мёд"
+    // },
 
 ]

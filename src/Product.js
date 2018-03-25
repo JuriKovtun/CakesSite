@@ -1,21 +1,13 @@
 class Product {
-
-    constructor(productCategory, imageSrcValue, productCaption, productPrice, productWeight, productComposition, extraIngredient_1, extraPrice_1) {
-
+    constructor(productCategory, imageSrcValue, productCaption, productPrice, productWeight, productComposition, ingredients) {
         this.productCategory = productCategory;
         this.imageSrcValue = imageSrcValue;
         this.productCaption = productCaption;
         this.productPrice = productPrice;
         this.productWeight = productWeight;
         this.productComposition = productComposition;
-        this.extraIngredient_1 = extraIngredient_1;
-        this.extraPrice_1 = extraPrice_1;
-        // this.extraIngredient_2 = extraIngredient_2;
-        // this.extraPrice_2 = extraPrice_2;
-        // this.extraIngredient_3 = extraIngredient_3;
-        // this.extraPrice_3 = extraPrice_3;
-        // this.extraIngredient_4 = extraIngredient_4;
-        // this.extraPrice_4 = extraPrice_4;
+        this.ingredients = ingredients;
+
     }
 
     render(location) {
@@ -74,22 +66,6 @@ class Product {
         let extraIngredientsList = document.createElement("div");
         extraIngredientsList.classList.add("product__extraIngredients-list", "product-text");
 
-        let extraWrapper = document.createElement("div");
-        extraWrapper.classList.add("product__extraIngredients__checkbox-wrapper");
-
-        let extraCheckbox = document.createElement("input");
-        extraCheckbox.classList.add("product__extraIngredients-checkbox");
-        extraCheckbox.setAttribute("type", "checkbox");
-
-        let extraLabel = document.createElement("label");
-        extraLabel.classList.add("product__extraIngredients-label");
-        extraLabel.innerHTML = this.extraIngredient_1;
-
-
-        let extraPrice = document.createElement("span");
-        extraPrice.classList.add("product__extraIngredients-price");
-        extraPrice.innerHTML = this.extraPrice_1;
-
 
         product.appendChild(productBuy);
         productBuy.appendChild(productBuyContainer);
@@ -104,18 +80,13 @@ class Product {
         productComposition.appendChild(productCompositionList);
         product.appendChild(extraIngredients);
         product.appendChild(extraIngredientsList);
-        extraIngredientsList.appendChild(extraWrapper);
-        extraWrapper.appendChild(extraCheckbox);
-        extraWrapper.appendChild(extraLabel);
-        extraWrapper.appendChild(extraPrice);
 
-
+        this.ingredients.map((el) => extraIngredientsList.appendChild(this.renderIngredients(el.ingredient, el.price)));
         location.appendChild(product);
         return this;
     }
 
-    renderIngredient(ExIn, ExPr) {
-
+    renderIngredients(ingredient, price) {
         let extraWrapper = document.createElement("div");
         extraWrapper.classList.add("product__extraIngredients__checkbox-wrapper");
 
@@ -125,18 +96,16 @@ class Product {
 
         let extraLabel = document.createElement("label");
         extraLabel.classList.add("product__extraIngredients-label");
-        extraLabel.innerHTML = ExIn;
+        extraLabel.innerHTML = ingredient;
 
         let extraPrice = document.createElement("span");
         extraPrice.classList.add("product__extraIngredients-price");
-        extraPrice.innerHTML = ExPr;
+        extraPrice.innerHTML = price;
 
         extraWrapper.appendChild(extraCheckbox);
         extraWrapper.appendChild(extraLabel);
         extraWrapper.appendChild(extraPrice);
-
-        document.querySelector("product__extraIngredients-list").appendChild(extraWrapper);
-        return this;
+        return extraWrapper;
 
     }
 }
