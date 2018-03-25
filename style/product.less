@@ -1,45 +1,56 @@
+.products__checkboxes {
+
+}
+
+.products__main {
+  text-align: center;
+}
+
 .product {
-    width: 280px;
-    height: 520px;
-    //float: left;
-    display: inline-block;
-    margin: 10px;
-    box-shadow: 0 0 10px #aaa;
-    background-color: white;
-    font-size: 14px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+  width: 23%;
+  margin: 5px;
+  height: 520px;
+  display: inline-block;
+  vertical-align: top;
 
-.product__buy {
+  box-shadow: 0 0 10px #aaa;
+  background-color: white;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+
+  &__buy {
     position: relative;
-}
+  }
 
-.product__buy-button_wrapper {
+  &__buy-button_wrapper {
     position: absolute;
     top: 473px;
     width: 100%;
     border-top: 1px solid #dddddd;
-}
+  }
 
-.product__buy-button {
+  &__buy-button {
     background-color: purple;
     color: #eeeeee;
     display: block;
-    height: 35px;
-    width: 120px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
     margin: auto;
-    margin-top: 5px;
-}
+    margin-top: 6px;
+  }
 
-.product__image {
+  &__image {
     width: 100%;
-}
+  }
 
-.product-text {
-    padding: 4px 15px;
-}
+  &-text {
+    padding: 2px 15px;
+  }
 
-.product__caption {
+  &__caption {
     color: purple;
     letter-spacing: -0.5px;
     text-transform: uppercase;
@@ -48,66 +59,68 @@
     margin: 0;
     border-bottom: 1px solid #dddddd;
 
-}
+  }
 
-.product__price {
+  &__price {
     color: purple;
     font-weight: bold;
     border-bottom: 1px solid #dddddd;
-}
+  }
 
-.product__price-tag {
+  &__price-tag {
     font-size: 1.8em;
-}
+    width: 100%;
+  }
 
-.product__price-currency {
+  &__price-currency {
+    font-size: 0.9em;
+    margin-left: 5px;
 
-}
+  }
 
-.product__weight {
+  &__weight {
+    display: none;
     color: #646464;
-    position: relative;
-    left: 110px;
-}
+    float: right;
+    font-size: 0.75rem;
+    margin-top: 13px
 
-.product__composition {
+  }
+
+  &__composition {
     font-size: 0.8em;
     font-weight: bold;
-    line-height: 1.2em;
+    line-height: 1.4em;
     border-bottom: 1px solid #dddddd;
-}
 
-.product__composition-list {
+  }
+
+  &__composition-list {
     color: #646464;
     font-weight: normal;
     text-align: justify;
-}
+  }
 
-.product__ingredients {
+  &__ingredients {
     font-size: 0.8em;
     font-weight: bold;
-}
+  }
 
-.fa-caret-down {
-    font-size: 1.5em;
-    float: right;
-    padding-right: 15px;
-}
-
-.product__ingredients-list {
+  &__ingredients-list {
     display: none;
     font-size: 0.8em;
     color: #646464;
     font-weight: normal;
     text-align: justify;
+  }
 }
 
 .active {
-    background-color: #dddddd;
+  background-color: #dddddd;
 }
 
 .visible {
-    display: block;
+  display: block;
 }
 
 

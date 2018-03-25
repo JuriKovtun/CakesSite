@@ -1,67 +1,76 @@
 export default [
     {
-        productCategory: "Cookie",
-        imageSrcValue: "./img/product_pics/cookies/cookies001.jpg",
-        productCaption: "ПЕЧЕНЬЕ С САХАРНОЙ ПУДРОЙ НА КРУГЛОЙ ЗЕЛЕНОЙ ТАРЕЛКЕ",
-        productPrice: "111",
-        productWeight: "вес: 123 г",
-        productComposition: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-    },
-    {
-        productCategory: "Cookie",
-        imageSrcValue: "./img/product_pics/cookies/cookies002.jpg",
-        productCaption: "Plätzchen 002",
-        productPrice: "222",
-        productWeight: "вес: 123 г",
-        productComposition: "Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu. Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu."
-    },
-    {
-        productCategory: "Jam",
-        imageSrcValue: "./img/product_pics/jam/jam001.jpg",
-        productCaption: "Marmelade 001 Lecker lecker lecker",
-        productPrice: "333",
-        productWeight: "вес: 123 г",
-        productComposition: "Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu."
-    },
-    {
-        productCategory: "Jam",
-        imageSrcValue: "./img/product_pics/jam/jam002.jpg",
-        productCaption: "Marmelade 002",
-        productPrice: "444",
-        productWeight: "вес: 123 г",
-        productComposition: "Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu."
-    },
-    {
-        productCategory: "Cake",
+        productCategory: "Торты",
         imageSrcValue: "./img/product_pics/cakes/cakes001.jpg",
-        productCaption: "Der Torte",
-        productPrice: "444",
+        productCaption: "Шоколадный с пряной вишней",
+        productPrice: "500",
         productWeight: "вес: 123 г",
-        productComposition: "Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu."
+        productComposition: "шоколад, какао-мука, вишня, пряности",
     },
     {
-        productCategory: "Cupcake",
+        productCategory: "Чизкейки",
+        imageSrcValue: "./img/product_pics/cakes/cakes001.jpg",
+        productCaption: "Чизкейк Нью-Йорк",
+        productPrice: "500",
+        productWeight: "вес: 123 г",
+        productComposition: "песочная основа, сливки, кремсыр"
+    },
+    {
+        productCategory: "Печенье",
+        imageSrcValue: "./img/product_pics/cookies/cookies002.jpg",
+        productCaption: "Овсяное печенье",
+        productPrice: "15",
+        productWeight: "вес: 123 г",
+        productComposition: "овсяные хлопья, мёд"
+    },
+    {
+        productCategory: "Капкейки",
         imageSrcValue: "./img/product_pics/cupcakes/cupcake007.jpg",
-        productCaption: "Cupcake 007",
-        productPrice: "444",
+        productCaption: "Капкейк ванильный",
+        productPrice: "17",
         productWeight: "вес: 123 г",
-        productComposition: "Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu."
+        productComposition: "ванильный бисквит, крем сыр"
     },
     {
-        productCategory: "Marshmallow",
+        productCategory: "Десерты",
+        imageSrcValue: "./img/product_pics/jam/jam001.jpg",
+        productCaption: "Шоколадный трайфл",
+        productPrice: "30",
+        productWeight: "вес: 123 г",
+        productComposition: "супершоколадный бисквит, сметанный крем, шоколад"
+    },
+    {
+        productCategory: "Полезные сладости",
         imageSrcValue: "./img/product_pics/marshmallow/marshmallow001.jpg",
-        productCaption: "Der Zephir",
-        productPrice: "444",
+        productCaption: "Зефир",
+        productPrice: "15",
         productWeight: "вес: 123 г",
-        productComposition: "Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu."
+        productComposition: "белок, фруктовое пюре, агар-агар 15 грн"
     },
     {
-        productCategory: "Marshmallow",
+        productCategory: "Полезные сладости",
         imageSrcValue: "./img/product_pics/marshmallow/marshmallow002.jpg",
-        productCaption: "Der Zephir",
-        productPrice: "444",
+        productCaption: "Пастила",
+        productPrice: "60-100",
         productWeight: "вес: 123 г",
-        productComposition: "Lorem ipsum dolor sit amet, his oratio ancillae ea, vidit malis eirmod eos eu."
+        productComposition: "фруктовое пюре"
+    },
+
+    {
+        productCategory: "Домашняя выпечка",
+        imageSrcValue: "./img/product_pics/jam/jam002.jpg",
+        productCaption: "Фруктовая кростата",
+        productPrice: "200",
+        productWeight: "вес: 123 г",
+        productComposition: "песочное тесто, фрукты"
+    },
+    {
+        productCategory: "Наборы",
+        imageSrcValue: "./img/product_pics/cookies/cookies001.jpg",
+        productCaption: "Пряники",
+        productPrice: "25-50",
+        productWeight: "вес: 123 г",
+        productComposition: "имбирное тесто, специи, мёд"
     },
 
 ]
