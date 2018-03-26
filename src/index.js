@@ -8,7 +8,6 @@ import "../style/ingredients.less"
 
 import {setupSlider} from "./setupSlider";
 import {renderCheckboxes, filterCheckboxes} from "./setupCheckboxes";
-import setupDropdown from "./setupDropdown";
 import data from "../data/ingredients.js";
 import sliderImages from "../data/sliderImages.js";
 import Product from "./Product";
@@ -17,14 +16,10 @@ import Product from "./Product";
 const database = data;
 const categories = [...new Set(data.map(item => item.category))];
 
-
 setupSlider(sliderImages);
 
 const checkboxArea = document.querySelector(".products__checkboxes");
 const checkBoxes = renderCheckboxes(checkboxArea, categories);
-
-
-//setupDropdown(dropdownContent);
 
 const productsLocation = document.querySelector(".products__main");
 const products = database.map(item => new Product(item['category'], item['imageSrcValue'], item['caption'], item['price'], item['weight'], item['composition'], item['extraIngredients']).render(productsLocation));
