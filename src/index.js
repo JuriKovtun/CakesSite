@@ -4,6 +4,7 @@ import "../style/common.less"
 import "../style/footer.less"
 import "../style/header.less"
 import "../style/product.less"
+import "../style/ingredients.less"
 
 import {setupSlider} from "./setupSlider";
 import {renderCheckboxes, filterCheckboxes} from "./setupCheckboxes";

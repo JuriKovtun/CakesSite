@@ -18,29 +18,6 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
 
-  &__buy {
-    position: relative;
-  }
-
-  &__buy-button_wrapper {
-    position: absolute;
-    top: 432px;
-    width: 100%;
-    border-top: 1px solid #dddddd;
-  }
-
-  &__buy-button {
-    background-color: purple;
-    color: #eeeeee;
-    display: block;
-    font-size: 12px;
-    font-weight: bold;
-    height: 30px;
-    width: 100px;
-    margin: auto;
-    margin-top: 3px;
-  }
-
   &__image {
     width: 100%;
   }
@@ -64,17 +41,17 @@
     color: purple;
     font-weight: bold;
     border-bottom: 1px solid #dddddd;
-  }
 
-  &__price-tag {
-    font-size: 1.8em;
-    width: 100%;
-  }
+    &-tag {
+      font-size: 1.8em;
+      width: 100%;
+    }
 
-  &__price-currency {
-    font-size: 0.9em;
-    margin-left: 5px;
+    &-currency {
+      font-size: 0.9em;
+      margin-left: 5px;
 
+    }
   }
 
   &__weight {
@@ -91,62 +68,26 @@
     font-weight: bold;
     line-height: 1.4em;
     border-bottom: 1px solid #dddddd;
+    height: 30px;
 
+    &-list {
+      color: #646464;
+      font-weight: normal;
+      text-align: justify;
+    }
+  }
+  &__buy-section {
+    margin-top: 2px;
+    text-align: center;
   }
 
-  &__composition-list {
-    color: #646464;
-    font-weight: normal;
-    text-align: justify;
-  }
-
-}
-
-.ingredients {
-  font-size: 0.8em;
-  font-weight: bold;
-  margin-top: 5px;
-
-  &-list {
-    display: block;
-
-  }
-
-  &__checkbox-container {
-    margin-top: 5px;
-    clear: both;
-
-  }
-
-  &-checkbox {
-    height: 18px;
-    width: 18px;
-    float: left;
-
-  }
-
-  &-label {
-    font-size: 0.8em;
+  &__buy-button {
+    background-color: purple;
+    color: #eeeeee;
+    font-size: 12px;
     font-weight: bold;
-    position: relative;
-    top: 5px;
-    left: 5px;
-
-
-  }
-
-  &-price {
-    float: right;
-    color: purple;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 4px;
-  }
-
-  &-currency {
-    font-size: 0.6em;
-
-
+    height: 30px;
+    width: 100px;
   }
 
 }

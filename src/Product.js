@@ -10,21 +10,27 @@ class Product {
 
     }
 
-    render(location) {
-        let product = document.createElement("div");
-        product.classList.add("product");
-        product.setAttribute("category", this.category);
-
+    renderBuyButton() {
         let productBuy = document.createElement("div");
-        productBuy.classList.add("product__buy");
+        productBuy.classList.add("product__buy-section");
 
-        let productBuyContainer = document.createElement("div");
-        productBuyContainer.classList.add("product__buy-button_wrapper");
 
         let productBuyButton = document.createElement("button");
         productBuyButton.classList.add("product__buy-button");
         productBuyButton.setAttribute("onclick", "alert('Well done!')");
         productBuyButton.innerHTML = "КУПИТЬ";
+
+        productBuy.appendChild(productBuyButton);
+        return productBuy;
+
+    }
+
+    render(location) {
+        let product = document.createElement("div");
+        product.classList.add("product");
+        product.setAttribute("category", this.category);
+
+
 
         let productImage = document.createElement("img");
         productImage.classList.add("product__image");
@@ -67,9 +73,9 @@ class Product {
         extraIngredientsList.classList.add("ingredients-list", "product-text");
 
 
-        product.appendChild(productBuy);
-        productBuy.appendChild(productBuyContainer);
-        productBuyContainer.appendChild(productBuyButton);
+
+
+
         product.appendChild(productImage);
         product.appendChild(productCaption);
         product.appendChild(productPrice);
@@ -80,6 +86,9 @@ class Product {
         productComposition.appendChild(productCompositionList);
         product.appendChild(extraIngredients);
         product.appendChild(extraIngredientsList);
+
+        const buyButton = this.renderBuyButton();
+        product.appendChild(buyButton);
 
         this.ingredients.map((el) => extraIngredientsList.appendChild(this.renderIngredients(el.ingredient, el.price)));
         location.appendChild(product);
