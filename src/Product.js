@@ -11,17 +11,17 @@ class Product {
     }
 
     renderBuyButton() {
-        let productBuy = document.createElement("div");
-        productBuy.classList.add("product__buy-section");
+        let buySection = document.createElement("div");
+        buySection.classList.add("product__buy-section");
 
 
-        let productBuyButton = document.createElement("button");
-        productBuyButton.classList.add("product__buy-button");
-        productBuyButton.setAttribute("onclick", "alert('Well done!')");
-        productBuyButton.innerHTML = "КУПИТЬ";
+        let buyButton = document.createElement("button");
+        buyButton.classList.add("product__buy-button");
+        buyButton.setAttribute("onclick", "alert('Well done!')");
+        buyButton.innerHTML = "КУПИТЬ";
 
-        productBuy.appendChild(productBuyButton);
-        return productBuy;
+        buySection.appendChild(buyButton);
+        return buySection;
 
     }
 
@@ -29,8 +29,6 @@ class Product {
         let product = document.createElement("div");
         product.classList.add("product");
         product.setAttribute("category", this.category);
-
-
 
         let productImage = document.createElement("img");
         productImage.classList.add("product__image");
@@ -71,9 +69,6 @@ class Product {
 
         let extraIngredientsList = document.createElement("div");
         extraIngredientsList.classList.add("ingredients-list", "product-text");
-
-
-
 
 
         product.appendChild(productImage);
