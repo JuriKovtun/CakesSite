@@ -77,20 +77,23 @@ class Product {
 
     }
 
-    render(location) {
-        let product = document.createElement("div");
-        product.classList.add("product");
-        product.setAttribute("category", this.category);
-
+    renderImage() {
         let image = document.createElement("img");
         image.classList.add("product__image");
         image.setAttribute("src", this.imageSrcValue);
         image.setAttribute("alt", "image error");
+        return image
+    }
 
+
+    renderTitle() {
         let caption = document.createElement("h4");
-        caption.classList.add("product__caption", "product-text");
+        caption.classList.add("product__title", "product-text");
         caption.innerHTML = `${this.caption}`;
+        return caption;
+    }
 
+    renderComposition() {
         let composition = document.createElement("div");
         composition.classList.add("product__composition", "product-text");
         composition.innerHTML = "Состав: ";
@@ -98,32 +101,47 @@ class Product {
         let compositionList = document.createElement("span");
         compositionList.classList.add("product__composition-list");
         compositionList.innerHTML = `${this.composition}`;
+        composition.appendChild(compositionList);
+        return composition;
 
+    }
+
+    renderExtraIngredientsTitle() {
         let extraIngredients = document.createElement("div");
         extraIngredients.classList.add("ingredients", "product-text");
         extraIngredients.innerHTML = "Дополнительные ингредиенты:";
+        return extraIngredients;
+    }
 
+    renderExtraIngredientsList() {
         let extraIngredientsList = document.createElement("div");
         extraIngredientsList.classList.add("ingredients-list", "product-text");
+        this.ingredients.map((el) => extraIngredientsList.appendChild(this.renderIngredients(el.ingredient, el.price)));
+        return extraIngredientsList;
+    }
 
 
-        product.appendChild(image);
-        product.appendChild(caption);
+    render(location) {
+        let product = document.createElement("div");
+        product.classList.add("product");
+        product.setAttribute("category", this.category);
+
+
+        product.appendChild(this.renderImage());
+        product.appendChild(this.renderTitle());
 
         const price = this.renderPrice();
         product.appendChild(price);
 
-        product.appendChild(composition);
-        composition.appendChild(compositionList);
-        product.appendChild(extraIngredients);
-        product.appendChild(extraIngredientsList);
+        product.appendChild(this.renderComposition());
+        product.appendChild(this.renderExtraIngredientsTitle());
+        product.appendChild(this.renderExtraIngredientsList());
 
-        this.ingredients.map((el) => extraIngredientsList.appendChild(this.renderIngredients(el.ingredient, el.price)));
-        location.appendChild(product);
 
         const buyButton = this.renderBuyButton();
         product.appendChild(buyButton);
 
+        location.appendChild(product);
         return this;
     }
 }
