@@ -44,53 +44,24 @@
 </aside>
 <main class="products">
     <section class="products__checkboxes">
+
+        <!--Check box sandbox-->
+
+        <div class="products__checkboxes_wrapper">
+            <div class="products__checkboxes_container"><input id="foo" class="products__checkbox" type="checkbox"><label for="foo" class="products__checkbox_label">Торты</label></div>
+            <input id="fo" class="products__checkbox" type="checkbox">
+            <label for="fo" class="products__checkbox_label">Чизкейки</label>
+            <label class="products__checkbox_label">Печенье<input class="products__checkbox" type="checkbox"></label>
+            <label class="products__checkbox_label">Капкейки<input class="products__checkbox" type="checkbox"></label>
+            <label class="products__checkbox_label">Десерты<input class="products__checkbox" type="checkbox"></label>
+            <label class="products__checkbox_label">Полезные сладости<input class="products__checkbox" type="checkbox"></label>
+            <label class="products__checkbox_label">Домашняя выпечка<input class="products__checkbox" type="checkbox"></label>
+            <label class="products__checkbox_label">Наборы<input class="products__checkbox" type="checkbox"></label>
+        </div>
+
     </section>
     <section class="products__main">
 
-        <!--product sample-->
-
-        <div class="product" category="Торты">
-
-            <img class="product__image" src="./img/product_pics/cakes/cakes001.jpg" alt="image error"><h4
-                class="product__caption product-text">Шоколадный с пряной вишней</h4>
-            <div class="product__price product-text"><span class="product__price-tag">500</span><span
-                    class="product__price-currency">грн</span><span class="product__weight">вес: 123 г</span></div>
-            <div class="product__composition product-text">Состав: <span class="product__composition-list">шоколад, какао-мука, вишня, пряности</span>
-            </div>
-            <div class="ingredients product-text" onclick="setupDropdown(this)">Дополнительные
-                ингредиенты:
-            </div>
-            <div class="ingredients-list product-text">
-                <div class="ingredients__checkbox-container">
-
-                    <label for="foo" class="ingredients-label">Шоколад
-                        <input id="foo" class="ingredients-checkbox" type="checkbox"></label>
-                    <span  class="ingredients-price">20<span class="ingredients-currency"> грн</span></span>
-
-                </div>
-                <div class="ingredients__checkbox-container">
-
-                    <label class="ingredients-label">Карамель
-                        <input class="ingredients-checkbox" type="checkbox"></label>
-                    <span class="ingredients-price">20<span class="ingredients-currency"> грн</span></span>
-                </div>
-                <div class="ingredients__checkbox-container">
-
-                    <label class="ingredients-label">Орехи
-                        <input class="ingredients-checkbox" type="checkbox"></label>
-                    <span class="ingredients-price">15<span class="ingredients-currency"> грн</span></span>
-                </div>
-                <div class="ingredients__checkbox-container">
-
-                    <label class="ingredients-label">Алкоголь
-                        <input class="ingredients-checkbox" type="checkbox"></label>
-                    <span class="ingredients-price">25<span class="ingredients-currency"> грн</span></span>
-                </div>
-            </div>
-            <div class="product__buy-section">
-                <button class="product__buy-button">КУПИТЬ</button>
-            </div>
-        </div>
     </section>
 
 </main>
