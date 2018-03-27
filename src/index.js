@@ -1,9 +1,11 @@
 import "../style/about.less"
 import "../style/carousel.less"
+import "../style/categoryCheckbox.less"
 import "../style/common.less"
 import "../style/footer.less"
 import "../style/header.less"
 import "../style/product.less"
+import "../style/products.less"
 import "../style/ingredients.less"
 
 import {setupSlider} from "./setupSlider";

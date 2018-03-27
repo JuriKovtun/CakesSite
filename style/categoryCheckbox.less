@@ -1,0 +1,37 @@
+.products__checkboxes_container {
+  //background-color: slategray;
+  display: inline-block;
+
+}
+
+.products__checkbox_label {
+  background-color: indianred;
+  display: inline-block;
+  //width: 240px;
+  font-size: 1.1rem;
+  padding: 5px;
+
+}
+
+.products__checkbox_label:hover {
+  background-color: burlywood;
+
+
+}
+
+.products__checkbox {
+  float: left;
+  width: 18px;
+  height: 18px;
+  //visibility: hidden;
+
+}
+
+input[type=checkbox]:checked + label {
+  background-color: cyan;
+}
+
+input[type=checkbox]:checked ~ label {
+  background-color: chartreuse;
+}
+
