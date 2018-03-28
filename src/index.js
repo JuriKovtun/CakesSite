@@ -1,6 +1,5 @@
 import "../style/about.less"
 import "../style/carousel.less"
-import "../style/categoryCheckbox.less"
 import "../style/common.less"
 import "../style/footer.less"
 import "../style/header.less"
