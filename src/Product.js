@@ -1,5 +1,5 @@
 class Product {
-    constructor(category, imageSrcValue, caption, price, weight, composition, ingredients) {
+    constructor(category, imageSrcValue, caption, price, weight, composition, ingredients, buyHanlder) {
         this.category = category;
         this.imageSrcValue = imageSrcValue;
         this.caption = caption;
@@ -7,6 +7,7 @@ class Product {
         this.weight = weight;
         this.composition = composition;
         this.ingredients = ingredients;
+        this.buyHandler = buyHanlder;
 
     }
 
@@ -69,8 +70,9 @@ class Product {
 
         let buyButton = document.createElement("button");
         buyButton.classList.add("product__buy-button");
-        buyButton.setAttribute("onclick", "alert('Well done!')");
         buyButton.innerHTML = "КУПИТЬ";
+        buyButton.addEventListener("click", (ev) => this.buyHandler(this), false);
+
 
         buySection.appendChild(buyButton);
         return buySection;
@@ -118,6 +120,14 @@ class Product {
         extraIngredientsList.classList.add("ingredients-list", "product-text");
         this.ingredients.map((el) => extraIngredientsList.appendChild(this.renderIngredients(el.ingredient, el.price)));
         return extraIngredientsList;
+    }
+
+    renderCartItem(count) {
+        let product = document.createElement("div");
+        product.classList.add("product__cart");
+        product.innerHTML = `${this.caption}: ${count}`;
+
+        return product;
     }
 
 
